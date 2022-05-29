@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar Section</title>
+    <style>
+        body{
+            background-color: #c9d1d9;
+        }
+        .nav-bar{
+            margin: -10px;
+            display: flex;
+            background-color: whitesmoke;
+        }
+        .nav-bar img{
+            width: 40px;
+            height: 40px;
+            margin: 15px;
+        }
+        .nav-bar span{
+            display: flex;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 10px;
+        }
+        .nav-bar ul{
+            display: inline-flex;
+            list-style-type: none;
+        }
+        .nav-bar ul li{
+            margin: 10px 60px 10px 0px;
+        }
+        .nav-bar ul li a{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: none;
+            color: #8c8f94;
+            cursor: pointer;
+        }
+        .nav-bar ul li a.active{
+            border-bottom: 3px solid #8957e5;
+            padding-bottom: 25px;
+            color: black;
+        }
+        .nav-bar form img{
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            opacity: 0.5;
+            margin-top: 30px;
+            margin-bottom: auto;
+            margin-left: 260px;
+        }
+        .nav-bar form input{
+            display: inline-flex;
+            margin-left: 250px;
+            padding: 10px 170px 10px 35px;
+            margin-top: 20px;
+            border: 1px solid #c4c9d0;
+            border-radius: 7px;
+        }
+        .nav-bar form input :placeholder-shown{
+            color: aliceblue;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <span>
+            <img src="assets/task-nav-logo.svg" alt="Workflow Logo">
+            <h2>workflow</h2>
+        </span>
+        <ul>
+            <li><a class="active" href="#">Dashboard</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+        </ul>
+        <form>
+            <label for="search"></label>
+            <img src="./assets/task-nav-search.svg" alt="search icon">
+            <input type="search" id="search" name="search" 
+            placeholder="Search">
+        </form>
+        <img src="./assets/task-nav-bell-icon.svg" alt="bell icon"
+        style="height: 25px; width: 25px; opacity: 0.3; margin: 25px 10px auto 20px;">
+        <img src="./assets/task-nav-user.png" alt="user profile"
+        style="border-radius:50%; height: 35px; width: 35px; margin-top: 20px;">
+    </div>
+</body>
+</html>
