@@ -13,4 +13,4 @@ A repository created for college tasks
 ![](Assignments/Assignment%202/Hero%20Page%20Output.png)
 
 4. Nav-bar Page
-![](Assignments/Assignment%202/Hero%20Page%20Output.png)
+![](Assignments/Assignment%202/Nav-bar%20Page%20Output.png)
