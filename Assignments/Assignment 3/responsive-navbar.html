@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Nav-bar</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      position: relative;
+    }
+
+    .nav-bar {
+      padding: 0px 40px;
+      display: flex;
+      justify-content: space-between;
+      height: 59px;
+      z-index: 2;
+    }
+
+    .text-logo {
+      margin-left: 15px;
+      font-weight: 800;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-logo {
+      width: 36px;
+    }
+
+    .navigations {
+      margin-left: 60px;
+      display: flex;
+    }
+
+    .navigations li {
+      list-style: none;
+      padding: 16px 0px;
+      margin: 0px 20px;
+    }
+
+    .navigations li a {
+      text-decoration: none;
+      color: #0000009d;
+      font-size: 1em;
+    }
+
+    .active {
+      font-weight: bold;
+      color: black;
+    }
+
+    .active-one {
+      height: 2px;
+      background-color: blueviolet;
+      border-radius: 10px;
+    }
+
+    .left-nav {
+      display: flex;
+    }
+
+    .right-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar {
+      display: flex;
+      /* display: none; */
+      align-items: center;
+      border: 1px solid #00000044;
+      border-radius: 8px;
+      padding: 8px 0;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 1em;
+      margin-left: 16px;
+      width: 280px;
+      background-color: transparent;
+    }
+
+    .search-icon {
+      margin-left: 12px;
+      width: 20px;
+      opacity: 0.4;
+    }
+
+    .notification-icon {
+      width: 24px;
+      opacity: 0.4;
+    }
+
+    .avatar {
+      width: 28px;
+      border-radius: 50%;
+    }
+
+    .ham {
+      width: 24px;
+      margin-left: 20px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .ham-menu {
+      display: none;
+      height: 100vh;
+      background-color: #ffffff;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      margin-top: 0.04em;
+      border: 5px solid whitesmoke;
+      box-shadow: 1px 1px 5px #00000044;
+    }
+
+    .ham-searchBar {
+      display: flex;
+      margin: auto;
+      width: 300px;
+      margin-top: 4em;
+      align-items: center;
+      border: 1px solid #00000044;
+      border-radius: 8px;
+      padding: 8px 0;
+    }
+
+    .ham-list {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: blueviolet;
+      border-top-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+    }
+
+    .ham-menu ul li a {
+      text-decoration: none;
+      color: #0000009d;
+      font-size: 1.2em;
+      padding: 1em 0.5em;
+      color: whitesmoke;
+    }
+
+    .ham-menu ul li a:hover {
+      border-bottom: 2px solid rgb(225, 225, 228);
+      font-weight: bold;
+    }
+
+    .ham-menu ul li {
+      list-style: none;
+      margin: 1em 3em;
+      padding: 1em 3em;
+
+      /* background-color: aqua; */
+    }
+
+    .close {
+      width: 18px;
+      margin-left: 20px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .notification-icon,
+    .avatar {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="left-nav">
+      <div class="logo">
+        <img src="./asstes/task-nav-logo.svg" alt="" class="icon-logo" />
+        <h1 class="text-logo">workflow</h1>
+      </div>
+
+      <ul class="navigations">
+        <div class="nav-menu">
+          <li>
+            <a class="active" href="#">Dashboard</a>
+          </li>
+          <div class="active-one"></div>
+        </div>
+        <div class="nav-menu">
+          <li>
+            <a class="" href="#">Team</a>
+          </li>
+        </div>
+        <div class="nav-menu">
+          <li>
+            <a class="" href="#">Projects</a>
+          </li>
+        </div>
+        <div class="nav-menu">
+          <li>
+            <a class="" href="#">Calender</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="right-nav">
+      <div class="search-bar">
+        <img class="search-icon" src="./asstes/task-nav-search.svg" alt="" />
+        <input type="text" placeholder="Search" />
+      </div>
+      <img src="./asstes/task-nav-bell-icon.svg" alt="" class="notification-icon" />
+      <img src="./asstes/task-nav-user.png" alt="" class="avatar" />
+      <img src="./asstes/ham-menu.svg" alt="" class="ham" />
+      <img src="./asstes/close.svg" alt="" class="close" />
+    </div>
+  </nav>
+
+  <!-- ham-menu -->
+  <div class="ham-menu">
+    <!-- <img src="./asstes/close.svg" alt="" class="close" /> -->
+    <div class="ham-searchBar">
+      <img class="search-icon" src="./asstes/task-nav-search.svg" alt="" />
+      <input type="text" placeholder="Search" />
+    </div>
+    <ul class="ham-list">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Calender</a></li>
+    </ul>
+  </div>
+  <script src="./asstes/jQuery3.6.js"></script>
+  <script>
+    $(document).ready(function () {
+      checkLargeDevice();
+      checkSmallDevice();
+    });
+
+    $(window).resize(function () {
+      checkLargeDevice();
+      checkSmallDevice();
+    });
+
+    function checkSmallDevice() {
+      if ($(window).width() < 1150) {
+        $(".ham").show(1000);
+        $(".search-bar").hide(1000);
+        $(".nav-items").hide(1000);
+        $(".close").hide(1000);
+      }
+    }
+
+    function checkLargeDevice() {
+      if ($(window).width() > 1150) {
+        $(".ham").hide(1000);
+        $(".ham-menu").hide(1000);
+        $(".search-bar").show(1000);
+        $(".nav-items").show(1000);
+      }
+    }
+
+    $(".ham").click(function () {
+      $(".ham-menu").show(1000);
+      $(".ham").hide();
+      $(".close").show();
+    });
+
+    $(".close").click(function () {
+      $(".ham").show();
+      $(".close").hide();
+      $(".ham-menu").hide(1000);
+    });
+  </script>
+</body>
+
+</html>
