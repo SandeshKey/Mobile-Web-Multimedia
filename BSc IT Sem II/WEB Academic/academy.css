@@ -1,0 +1,1450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    background: linear-gradient(to right,#53514f, #171614);
+    opacity: 1;
+    margin-top: 0;
+    text-align: right;
+    z-index: 2;
+    position: fixed;
+}
+nav h1{
+    color: rgb(252, 82, 53);
+    font-family: Black Ops One;    
+    font-size: 4rem;
+    float: left;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+nav img{
+    position: relative;
+    height: 7rem;
+    width: 6.8rem;
+    cursor: pointer;
+    float: left;
+    margin-left: 2rem;
+    top: 0;
+}
+nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 7rem;
+}
+nav ul li{
+    margin: 1rem;
+    padding: 1rem;
+    padding-right: 2.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 1.8rem;
+    font-family: Alata;
+}
+nav ul li a:hover{
+    transition: .7s;
+    color: #FEA837;
+    cursor: pointer;
+    border-bottom: 3px solid #f8f6f6;
+    border-radius: 3px;
+}
+.check-button{
+    font-size: 4rem;
+    float: right;
+    margin-right: 5rem;
+    margin-top: .9rem;
+    color: tomato;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+body{
+    background-image: url(finale.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul li i{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.admission-submenu{
+    display: none;
+}
+nav ul li:hover .admission-submenu{
+    display: block;
+    position: absolute;
+    width: 16rem;
+    background-color: rgba(0, 0, 0, .7);
+    margin-top: 1rem;
+    margin-left: -2rem;
+}
+nav ul li:hover .admission-submenu ul{
+    display: block;
+    width:15rem;
+
+    /* border-left:.2rem solid azure;
+    border-right:.2rem solid azure;    */
+
+}
+nav ul li:hover .admission-submenu ul li{
+    width: auto;
+    text-align: left;
+    border-bottom: 2px inset azure;
+    cursor: auto;
+}
+nav ul li:hover .admission-submenu ul li a:hover{
+    color: rgb(255, 150, 133);
+    border-bottom: none;
+}
+#webpage-1{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+.welcome-glass {
+    height: 40rem;
+    width: 80rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 4rem;
+    top: 9%;
+    left: 50%;
+    margin-top: -40rem;    
+    margin-left: -40rem;    /*half measurement of width  */
+    padding: 2rem;
+    z-index: 1;
+}
+.welcome-glass:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    box-shadow: 0 1px 4px 0 rgb(252, 252, 252), 0 1px 8px rgb(255, 97, 97);
+    transition: 1s ease-in-out;
+}
+.welcome-glass h1{
+    font-size: 8rem;
+    color: rgb(255, 79, 47);
+    text-align: center;
+    font-family:Black Ops One;
+}
+.welcome-glass h2{
+    font-size: 3.5rem;
+    color: rgb(247, 81, 52);
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    padding: 1rem;
+}
+.welcome-glass h4{
+    font-size: 2rem;
+    color: azure;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+}
+.welcome-glass h3{
+    font-size: 2rem;
+    color: rgb(255, 245, 244);
+    text-align: center;
+    font-family:'Montserrat', sans-serif ;
+    padding: 4rem;
+}
+.explore-btn{
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 20%;
+    height: 14%;
+    border: 2px solid azure;
+    border-radius: .2rem;
+    background: none;
+    color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;  /* This is for the link that connects button to Explore Page */
+}
+.explore-btn:hover{
+    border: .2rem solid tomato;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: azure;
+    transition: .5s ease-in-out;
+    letter-spacing: .025rem;
+}
+.explore-btn::before, .explore-btn::after{
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: .2rem;
+    background: azure;
+    transform: skewX(100deg);  /* slashes, styles / cuts the content by 100 degree */
+}
+.explore-btn::before{
+    top: -.2rem;
+    margin-left: -17%;
+}
+.explore-btn::after{
+    bottom: -.2rem;
+}
+.explore-btn:hover::before{
+    left: 90%;
+    background-color: #171614;
+}
+.explore-btn:hover::after{
+    right: 70%;
+    background-color: #171614;
+}
+.webpage-container{
+    position: relative;
+    background-blend-mode: multiply;
+}
+#explore-page{
+    height: auto;
+    width: 100%;
+    z-index: 2;
+    padding: 4rem;
+    background-size: cover;
+}
+#explore-page header{
+    text-align: center;
+    color: azure;
+    font-size: 4rem;
+    margin-top: 5%;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+.explore-page-subcontainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
+.explore-page-container-column1{
+    height: 60vh;
+    flex: 1 1 28rem;                            /* flex-grow, flex-shrink and container width */ 
+    margin: 2rem;
+    margin-top: 3%;
+    background: url(cccode.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1rem solid #FEA837;
+}
+.explore-page-container-column1 footer{
+    color: maroon;
+    background-color: azure;
+    padding: .5rem;
+    font-size: 3rem;
+    font-family: montserrat;
+    border-bottom: .5rem solid #FEA837;
+    cursor: auto;
+}
+.explore-page-container-column1 p{
+    display: none;
+}
+.explore-page-container-column1 button{
+    display: none;
+}
+.explore-page-container-column1:hover{
+    background: rgba(0, 0, 0, .7);
+    border-bottom: none;
+    box-shadow: 0 1px 4px 0 rgb(252, 252, 252), 0 1px 8px rgb(255, 97, 97);
+    transition: 1s ease-in-out;
+}
+.explore-page-container-column1:hover p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5rem;
+    cursor: text;
+}
+.explore-page-container-column1:hover button{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1.5rem 2rem;
+    border: .2rem solid #FEA837;
+    background: white;
+    cursor: pointer;
+}
+.explore-page-container-column1:hover button a{
+    border: .2rem solid azure;
+    border-radius: .2rem;
+    background: none;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.explore-page-container-column2{
+    height: 60vh;
+    flex: 1 1 28rem;
+    margin: 2rem;
+    margin-top: 3%;
+    background: url(soccer.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1rem solid #FEA837;
+}
+.explore-page-container-column2 footer{
+    color: maroon;
+    background-color: azure;
+    padding: .5rem;
+    font-size: 3rem;
+    font-family: montserrat;
+    border-bottom: .5rem solid #FEA837;
+    cursor: auto;
+}
+.explore-page-container-column2 p{
+    display: none;
+}
+.explore-page-container-column2 button{
+    display: none;
+}
+.explore-page-container-column2:hover{
+    background: rgba(0, 0, 0, .7);
+    border-bottom: none;
+    box-shadow: 0 1px 4px 0 rgb(252, 252, 252), 0 1px 8px rgb(255, 97, 97);
+    transition: 1s ease-in-out;
+}
+.explore-page-container-column2:hover p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5rem;
+    cursor: text;
+}
+.explore-page-container-column2:hover button{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1.5rem 2rem;
+    border: .2rem solid #FEA837;
+    background: white;
+    cursor: pointer;
+}
+.explore-page-container-column2:hover button a{
+    border: .2rem solid azure;
+    border-radius: .2rem;
+    background: none;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.explore-page-container-column3{
+    height: 60vh;
+    flex: 1 1 28rem;
+    margin: 2rem;
+    margin-top: 3%;
+    background: url(virus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1rem solid #FEA837;
+}
+.explore-page-container-column3 footer{
+    color: maroon;
+    background-color: azure;
+    padding: .5rem;
+    font-size: 3rem;
+    font-family: montserrat;
+    border-bottom: .5rem solid #FEA837;
+    cursor: auto;
+}
+.explore-page-container-column3 p{
+    display: none;
+}
+.explore-page-container-column3 button{
+    display: none;
+}
+.explore-page-container-column3:hover{
+    background: rgba(0, 0, 0, .7);
+    border-bottom: none;
+    box-shadow: 0 1px 4px 0 rgb(252, 252, 252), 0 1px 8px rgb(255, 97, 97);
+    transition: 1s ease-in-out;
+}
+.explore-page-container-column3:hover p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5rem;
+    cursor: text;
+}
+.explore-page-container-column3:hover button{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1.5rem 2rem;
+    border: .2rem solid #FEA837;
+    background: white;
+    cursor: pointer;
+}
+.explore-page-container-column3:hover button a{
+    border: .2rem solid azure;
+    border-radius: .2rem;
+    background: none;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.explore-page-container-column4{
+    height: 60vh;
+    flex: 1 1 28rem;
+    margin: 2rem;
+    margin-top: 3%;
+    background: url(db.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1rem solid #FEA837;
+}
+.explore-page-container-column4 footer{
+    color: maroon;
+    background-color: azure;
+    padding: .5rem;
+    font-size: 3rem;
+    font-family: montserrat;
+    border-bottom: .5rem solid #FEA837;
+    cursor: auto;
+}
+.explore-page-container-column4 p{
+    display: none;
+}
+.explore-page-container-column4 button{
+    display: none;
+}
+.explore-page-container-column4:hover{
+    background: rgba(0, 0, 0, .7);
+    border-bottom: none;
+    box-shadow: 0 1px 4px 0 rgb(252, 252, 252), 0 1px 8px rgb(255, 97, 97);
+    transition: 1s ease-in-out;
+}
+.explore-page-container-column4:hover p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5rem;
+    cursor: text;
+}
+.explore-page-container-column4:hover button{
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1.5rem 2rem;
+    border: .2rem solid #FEA837;
+    background: white;
+    cursor: pointer;
+}
+.explore-page-container-column4:hover button a{
+    border: .2rem solid azure;
+    border-radius: .2rem;
+    background: none;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#webpage-2{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    color: azure;
+    padding: 8rem;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: right;
+}
+.research-page-container{
+    width: 100%;
+    display: flex;
+}
+.research-page-form{
+    width: 30%;
+}
+.search-bar{
+    width: 60%;
+    margin-top: 20%;
+}
+.search-input{
+    font-size: 2rem;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem 15rem 2rem 7rem;
+    color: azure;
+    border-radius: 4rem;
+    border: .1rem solid tomato;
+    outline: none;
+}
+input:focus::placeholder{  /* :: is pseudo-element (keeping ':' is not focusing placeholder) */
+    color: transparent;
+}
+button.search-bar-btn{
+    cursor: pointer;
+    border: none;
+    font-size: 5rem;
+    font-family: Alata;
+    background: none;
+    color: #FEA837;
+    margin-left: -5.5rem;
+}
+button.search-bar-btn:hover{
+    transition: .7s ease-in-out;
+    color: azure;
+}
+.login-box{
+    margin-top: 30%;
+    width: 380px;
+    color: rgb(216, 167, 133);
+}
+.login-box h1{
+    font-size: 4rem;
+    font-family: Alata;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+.login-section{
+    width: 90%;
+    overflow: hidden;
+    font-size: 3rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: .2rem solid tomato;
+    border-bottom-right-radius: 2px;
+}
+.login-section i {
+    float: left;
+    height: 1rem;
+    margin-top: 1rem;
+}
+.login-section input{
+    border: none;
+    outline: none;
+    background: none;
+    color: gainsboro;
+    margin-left: 1rem;
+}
+.login-btn{
+    width: 30%;
+    margin-left: 35%;
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: .3rem solid #FEA837;
+    background: none;
+    color: #FEA837;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-family: Alata;
+    font-size: 2rem;
+}
+.login-btn:hover{
+    background-color: #FEA837;
+    transition: .7s ease-in-out;
+    color: black;
+    border: .3rem solid black;
+    border-radius: .2rem;
+}
+#webpage-3{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 5rem;
+    padding-top: 8rem;
+    background: rgba(0, 0, 0, .7);
+}
+#webpage-3 h1{
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 15%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+.admission-container{
+    width: 100%;
+    height: 75vh;
+    padding: 2rem;
+    overflow: auto;  /* clearfix-hack */
+}
+.admission-container img{
+    float: left;
+    margin-top: 6rem;
+    margin-right: 8rem;
+    height: 36rem;
+    width: 50rem;
+    border: none;
+    border-radius:  .4rem .4rem .4rem 2rem;
+    cursor: pointer;
+}
+.admission-container img:hover{
+    border: .3rem solid #FEA837;
+    border-radius: 0rem;
+}
+.admission-container h2{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 4rem;
+    margin-top: 4%;
+}
+.admission-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;  /* determines line spacing */
+    padding-top: 2.5rem;
+    text-align: justify;
+}
+.admission-container button{
+    width: 16rem;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    border: .2rem solid #FEA837;
+    background: white;
+    cursor: pointer;
+}
+.admission-container button a{
+    background: none;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.admission-container button:hover{
+    background-color: #FEA837;
+    transition: .7s ease-in-out;
+    border: .3rem solid black;
+    border-radius: .2rem;
+}
+#webpage-sports{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 2rem;
+    padding-top: 8rem;
+    background: rgba(0, 0, 0, .7);
+}
+#webpage-sports h1{
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 40%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+.sport-page-container{
+    height: 88vh;
+    display: flex;
+    overflow: auto;  /* clearfix-hack */
+}
+.sport-page-container table{
+    width: 40%;
+    height: 60%;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-bottom: .2rem solid #FEA837;
+}
+.sport-page-container table:hover{
+    box-shadow: 0 3px 10px rgb(252, 252, 252), 0 1px 8px rgb(255, 83, 4);
+    transition: 1s ease-in-out;
+}
+.sport-page-container table th{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 2rem;
+    border-bottom: .1rem solid tomato;
+}
+.sport-page-container table td{
+    cursor: pointer;
+    text-align: center;
+    color: azure;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+tr{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+tr:hover{
+    background-color: rgba(0, 0, 0, .7);
+}
+tr:nth-child(1):hover{
+    background-color: rgb(252, 82, 52);
+}
+tr:last-of-type{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+tr u{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #FEA837;
+    font-family: Alata;
+}
+td i{
+    font-size: 1.5rem;
+    color: #FEA837;
+}
+.sport-content{
+    width: 72rem;
+    margin-left: 5%;
+}
+.sport-content img{
+    height: 20rem;
+    width: 30rem;
+    margin-left: 5%;
+    border: .2rem solid tomato;
+}
+.sport-page-container h2{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 4rem;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.sport-page-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;  /* determines line spacing */
+    padding-top: 2.5rem;
+    text-align: justify;
+    color: azure;
+    text-indent: 10%;
+    margin-left: 5%;
+}
+#webpage-arts{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 2rem;
+    padding-top: 8rem;
+    background: rgba(0, 0, 0, .7);
+}
+#webpage-arts h1{
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 40%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+.arts-page-container{
+    height: 88vh;
+    display: flex;
+    overflow: auto;  /* clearfix-hack */
+}
+.arts-page-container table{
+    width: 40%;
+    height: 60%;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-bottom: .2rem solid #FEA837;
+}
+.arts-page-container table:hover{
+    box-shadow: 0 3px 10px rgb(252, 252, 252), 0 1px 8px rgb(255, 83, 4);
+    transition: 1s ease-in-out;
+}
+.arts-page-container table th{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 2rem;
+    border-bottom: .1rem solid tomato;
+}
+.arts-page-container table td{
+    cursor: pointer;
+    text-align: center;
+    color: azure;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+.arts-content{
+    width: 72rem;
+    margin-left: 5%;
+}
+.arts-content img{
+    height: 20rem;
+    width: 30rem;
+    margin-left: 5%;
+    border: .2rem solid tomato;
+}
+.arts-page-container h2{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 4rem;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.arts-page-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;  /* determines line spacing */
+    padding-top: 2.5rem;
+    text-align: justify;
+    color: azure;
+    text-indent: 10%;
+    margin-left: 5%;
+}
+#webpage-tech{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 2rem;
+    padding-top: 8rem;
+    background: rgba(0, 0, 0, .7);
+}
+#webpage-tech h1{
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 40%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+.tech-page-container{
+    height: 88vh;
+    display: flex;
+    overflow: auto;  /* clearfix-hack */
+}
+.tech-page-container table{
+    width: 40%;
+    height: 60%;
+    margin-top: 4%;
+    margin-left: 3%;
+    border-bottom: .2rem solid #FEA837;
+}
+.tech-page-container table:hover{
+    box-shadow: 0 3px 10px rgb(252, 252, 252), 0 1px 8px rgb(255, 83, 4);
+    transition: 1s ease-in-out;
+}
+.tech-page-container table th{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 2rem;
+    border-bottom: .1rem solid tomato;
+}
+.tech-page-container table td{
+    cursor: pointer;
+    text-align: center;
+    color: azure;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+.tech-content{
+    width: 72rem;
+    margin-left: 5%;
+}
+.tech-content img{
+    height: 20rem;
+    width: 30rem;
+    margin-left: 5%;
+    border: .2rem solid tomato;
+}
+.tech-page-container h2{
+    color: azure;
+    font-family: Montserrat;
+    font-size: 4rem;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.tech-page-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;  /* determines line spacing */
+    padding-top: 2.5rem;
+    text-align: justify;
+    color: azure;
+    text-indent: 10%;
+    margin-left: 5%;
+}
+#webpage-4{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 8rem;
+    background: rgba(0, 0, 0, .7);
+}
+#webpage-4 header{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+#webpage-4 img{
+    height: 30vh;
+    width: 30vh;
+    overflow: hidden;
+    margin: 2rem;
+    border: .3rem solid #FEA837;
+    border-bottom-left-radius: 1rem;
+    transition-property: width;
+}
+#webpage-4 img:hover{
+    width: 55vh;
+    transition: .8s ease-in-out;
+    border-radius: 3rem;
+}
+
+figure{
+    margin-top: 7%;
+    display: flex;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    margin-top: 12rem;
+    text-align: left;
+    background-color: tomato;
+}
+.foot i{
+    margin: 4px;
+    margin-top: 7px;
+    color: #3B5998;
+    font-size: 2rem;
+}
+.foot a{
+    color: #3B5998;
+    font-size: 1.7rem;
+}
+.foot{
+    font-family: Alata;
+    font-size: 1.7rem;
+    width: 20%;
+    padding: 1rem;
+    color: black;
+}
+#webpage-5{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    padding: 8rem;
+}
+.about-us-container{
+    display: flex;
+    overflow: auto;
+}
+.connect{
+    width: 40%;
+}
+#webpage-5 h1{
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 40%;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background: #FEA837;
+    color: black;
+}
+#webpage-5 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;  /* determines line spacing */
+    padding-top: 2.5rem;
+    text-align: justify;
+    color: azure;
+    text-indent: 10%;
+    margin-left: 5%;
+}
+.connect-facebook{
+    margin: 2rem;
+    padding: 1.6rem;
+    background-color: #3B5998;
+}
+.connect-instagram{
+    margin: 2rem;
+    padding: 1.6rem;
+    background-color: #fbad50;
+}
+.connect-twitter{
+    margin: 2rem;
+    padding: 1.6rem;
+    background-color: #00ACEE;
+}
+.connect-whatsapp{
+    margin: 2rem;
+    padding: 1.6rem;
+    background-color: #25D366;
+}
+#webpage-5 ul li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: azure;
+}
+ul{
+    list-style-type: none;
+}
+.connect ul{
+    text-align: left;
+}
+#webpage-5 i{
+    font-size: 2.5rem;
+    color: white;
+}
+.registration{
+    width: 44%;
+    height: 65vh;
+    margin-left: 10%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, .7);
+    border: .3rem solid #FEA837;
+    border-radius: 1rem;
+}
+.registration h1{
+    background: none;
+    color: tomato;
+}
+.registration p{
+    font-size: 3rem ;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+.registration select{
+    padding: 2rem;
+    background: tomato;
+    outline: none;
+    width: 40%;
+    height: 4rem;
+    margin: .5rem;
+    margin-left: 14%;
+}
+.registration button{
+    width: 16rem;
+    margin-top: 2rem;
+    margin-left: 35%;
+    padding: 1.5rem 2rem;
+    border: .2rem solid #FEA837;
+    background: white;
+    cursor: pointer;
+}
+.registration button a{
+    background: none;
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.registration button:hover{
+    background-color: #FEA837;
+    transition: .7s ease-in-out;
+    border: .3rem solid black;
+    border-radius: .2rem;
+}
+.calender{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin-top: 10%;
+    margin-bottom: 13%;
+    left: 40%;
+    background: #FEA837;
+    border: .4rem inset tomato;
+    text-align: center;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0000);
+}
+
+.calender #monthName{
+    position: relative;
+    padding: .5rem 1rem;
+    background: #53514f;
+    color: tomato;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.calender #year{
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: 250;
+    color: #171614;
+    font-family: Montserrat;
+}
+
+.calender #dayNumber{
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: 250;
+    color: #171614;
+    font-family: Montserrat;
+}
+
+.calender #dayName{
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #171614;
+    font-family: Montserrat;
+}
+
+
+
+
+@media screen and (max-width: 1088px){
+    html{
+        font-size: 60%;
+    }
+    nav{
+        background: rgba(0, 0, 0, .4);
+        height: 8.5rem;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        height: 85vh;
+        top: 10vh;
+        background-color: rgba(5, 5, 5, 1);
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        cursor: text;
+        left: -100%;
+        transition: ease-in-out 1s;
+    }
+    nav ul li:hover{
+        background-color: whitesmoke;
+        cursor: pointer;
+        width: 80%;
+        text-align: center;
+    }
+    nav ul li{
+        margin-top: 7rem;
+        border-bottom: 2px solid tomato;
+    }
+    nav ul li a{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .admission-submenu{
+        display: none;
+    }
+    nav ul li a:hover{
+        background-color: whitesmoke;
+        color: tomato;
+    }
+    .check-button{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    nav ul li:hover .admission-submenu{
+        display: none;
+    }
+    .welcome-glass {
+        height: 44rem;
+        width: 66rem;
+        position: absolute;
+        margin-top: -69rem;     
+        margin-left: -33rem;    
+        z-index: 1;
+    }
+    #explore-page header{
+        margin-top: 10%;
+    }
+    .explore-page-container-column1{
+        flex: 1 1 35rem;
+    }
+    .explore-page-container-column2{
+        flex: 1 1 35rem;
+    }
+    .explore-page-container-column3{
+        flex: 1 1 35rem;
+    }
+    .explore-page-container-column4{
+        flex: 1 1 35rem;
+    }
+    .explore-page-container-column1:hover p{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .explore-page-container-column2:hover p{
+        padding: 1rem;
+        font-size: 2rem;
+    }.explore-page-container-column3:hover p{
+        padding: 1rem;
+        font-size: 2rem;
+    }.explore-page-container-column4:hover p{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .explore-page-container-column1 footer{
+        text-align: center;
+    }
+    .explore-page-container-column2 footer{
+        text-align: center;
+    }
+    .explore-page-container-column3 footer{
+        text-align: center;
+    }
+    .explore-page-container-column4 footer{
+        text-align: center;
+    }
+    .research-page-container{
+        width: 100%;
+        display: block;
+    }
+    .research-page-container i{
+        display: none;
+    }
+    .search-bar{
+        width: 100%;
+        margin-left: 10rem;
+        margin-bottom: 13rem;
+    }
+    .login-box{
+        margin-left: 70%;
+    }
+    .admission-container img{
+        margin-bottom: 4rem;
+    }
+    .sport-page-container{
+        display: block;
+        overflow: visible;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #webpage-sports{
+        margin-bottom: 7%;
+    }
+    #webpage-sports h1{
+        margin-top: 4%;
+    }
+    .sport-page-container table{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .sport-content img{
+        display: block;
+        margin: 2rem;
+        margin-left: 33%;
+    }
+    .arts-page-container{
+        display: block;
+        overflow: visible;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #webpage-arts{
+        margin-bottom: 7%;
+    }
+    .arts-page-container table{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .arts-content img{
+        display: block;
+        margin: 2rem;
+        margin-left: 33%;
+    }
+    .tech-page-container{
+        display: block;
+        overflow: visible;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .tech-page-container table{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .tech-content img{
+        display: block;
+        margin: 2rem;
+        margin-left: 33%;
+    }
+    .about-us-container{
+        display: block;
+    }
+    .connect{
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    .registration{
+        width: 100%;
+        margin-left: 0rem;
+        margin-bottom: 8rem;
+    }
+    #webpage-4{
+        height: auto;
+        flex-direction: column;
+        margin-top: 15rem;
+    }
+    #webpage-4 img{
+        height: 60rem;
+        width: 70rem;
+    }
+    #webpage-4 img:hover{
+        width: 70rem;
+        transition: none;
+        border-radius: 3rem;
+    }
+    figure{
+        display: block;
+        max-width: 110%;
+        overflow-x: hidden;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 40%;
+    }
+    .welcome-glass {
+        height: 36rem;
+        width: 60rem;
+        top: 6.5%;
+        left: 50%;
+        margin-top: -45rem;    
+        margin-left: -30rem;    
+        padding: 2rem;
+        z-index: 1;
+    }
+    .welcome-glass:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #explore-page{
+        height: auto;
+        background:rgba(0, 0, 0, .7);
+        flex-direction: column;
+    }
+    #explore-page header{
+        margin-top: 10%;
+    }
+    .explore-page-container-column1{
+        flex: 1 1 40rem;
+    }
+    .explore-page-container-column2{
+        flex: 1 1 40rem;
+    }
+    .explore-page-container-column3{
+        flex: 1 1 40rem;
+    }
+    .explore-page-container-column4{
+        flex: 1 1 40rem;
+    }
+    .explore-page-container-column1:hover p{
+        padding: 7.5rem;
+        font-size: 2rem;
+    }
+    .explore-page-container-column2:hover p{
+        padding: 7.5rem;
+        font-size: 2rem;
+    }.explore-page-container-column3:hover p{
+        padding: 7.5rem;
+        font-size: 2rem;
+    }.explore-page-container-column4:hover p{
+        padding: 7.5rem;
+        font-size: 2rem;
+    }    
+    .search-bar{
+        width: 100%;
+        margin-bottom: 13rem;
+        margin-left: 10% ;
+    }
+    .login-box{
+        margin-left: 10%;
+    }  
+    .sport-content img{
+        display: block;
+        margin: 2rem;
+        margin-left: 15%;
+    }
+    .arts-page-container{
+        display: block;
+        overflow: visible;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .arts-page-container table{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .arts-content img{
+        margin-left: 15%;
+    }
+    .tech-content img{
+        display: ;
+        margin-left: 15%;
+    }
+    #webpage-4 img{
+        height: 40rem;
+        width: 50rem;
+    }
+    #webpage-4 img:hover{
+        width: 50rem;
+        transition: none;
+        border-radius: 3rem;
+    }
+}
+
+
+#timing{
+    color: black;
+    font-size: 3rem;
+    background-color: #FEA837;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    padding: 1rem;
+}

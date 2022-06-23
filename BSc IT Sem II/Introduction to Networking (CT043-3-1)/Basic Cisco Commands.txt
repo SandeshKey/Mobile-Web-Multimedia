@@ -1,0 +1,42 @@
+
+[User EXEC mode]
+enable
+
+[Privilege EXEC Mode]
+configure terminal
+!
+
+[Global Configuration Mode]
+hostname R1
+enable password class
+enable secret cisco
+service password-encryption
+banner motd $
+Authorized Users Only
+$
+!
+
+[Line Commands]
+line console 0
+ password class
+ login
+!
+line aux 0
+ password class
+ login
+!
+line vty 0 4
+ password class
+ login
+!
+
+[Interface Commands]
+interface fa0/0
+ ip address 192.168.11.1 255.255.255.0
+ no shutdown
+ end
+!
+
+[Privilege EXEC mode]
+copy running-config startup-config
+show startup-config

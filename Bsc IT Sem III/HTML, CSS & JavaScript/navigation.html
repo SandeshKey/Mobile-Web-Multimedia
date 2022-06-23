@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Navigation Bar
+    </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata">
+    <script src="https://kit.fontawesome.com/11c8559464.js"></script>
+
+    <style>
+        .background{
+            background-image:url(bnwsq.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100%;
+        }
+        .blur{
+            background-color: rgba(51, 47, 47, 0.5);
+            backdrop-filter: 18px;
+            height: 100vh;
+            width: 100%;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: sticky;
+            background-color: rgba(63, 60, 60, 0.0);
+        }
+        li{float: left;}
+        li a {
+            display: inline-block;
+            color: rgb(217, 255, 112);
+            padding: 55px;
+            margin: 10px;
+            text-decoration: none;
+            font-family: Alata;
+            font-size: 25px;
+            padding: 5px;
+            border: 0px inset rgba(143, 143, 143, 0.5);
+        }
+        li a:hover:not(active){
+            background-color: red;
+            color: #6cff4f;
+            font-family: Lobster;
+            padding: 15px;
+            transition: 1.0s;
+        }
+        .active{
+            background-color: rgb(199, 214, 168);
+            color: red;
+        }
+        div{
+            border: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background" >
+        <div class="blur">
+            <div class="clearfix"></div>
+            <ul>
+                <li> <a class="active" href="#Start"><i class="fas fa-home"></i> Get Started </a> </li>
+                <li> <a href="#Home"> Home </a> </li>
+                <li> <a href="#Features"> <i class="fas fa-phone"></i>Our Services </a> </li>
+                <li><a href="#news">News</a></li>
+
+
+                <li> <a href="#More"> <i class="fas fa-phone"></i>More Information </a> </li>
+                <li> <a href="#Contact"> Contact Us</a> </li>
+            </ul>
+        </div>    
+    </div>
+</body>
+</html>

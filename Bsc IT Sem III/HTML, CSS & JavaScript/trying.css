@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div{
+    padding: 5px;
+    margin: 5px;
+}
+body{
+    background-attachment: fixed;
+    background-image: url(night.jpg);
+    background-position: bottom;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: Alata;
+}
+h1{
+    font-family: Black ops one;
+    color: rgb(199, 195, 195);
+    background-color: rgba(130, 130, 131, 0.9);
+    border-radius: 3px;
+    width: auto;
+    text-align: center;
+    font-size:50px;
+    padding: 10px;
+    margin-left: 330px;
+    margin-right: 330px;
+    margin-bottom: 10px;
+}
+.menu-bar{
+    width: auto;
+    background-color: rgba(175, 173, 169, 0.7);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.menu-bar ul{
+    list-style-type:none;
+    display: inline-flex;
+}
+.menu-bar ul li{
+    width: auto;
+    margin:10px;
+    padding-left: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: sienna;
+    font-family: black ops one;
+    padding: 10px;
+}
+.menu-bar ul li :hover:not(active){
+    background-color: rgb(20, 9, 9);
+    color: brown;
+    border-radius: 1px;
+}
+.active {
+    background-color: rgba(228, 204, 49, 0.7);
+    border-radius: 1px;
+    color: rgb(248, 150, 37);
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover:not(active) .sub-menu1{
+    display:block;
+    position: absolute;
+    background-color: lavender;
+    margin-top: 5px;
+    margin-left: -15;
+    border-radius: 0px;
+}
+.menu-bar ul li:hover:not(active) .sub-menu1 ul{
+    display: block;
+    text-align: left;
+    margin: 10px;
+}
+.menu-bar ul li:hover:not(active) .sub-menu1 ul li{
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px inset rgb(240, 156, 240);
+    overflow: hidden;
+    background: transparent;

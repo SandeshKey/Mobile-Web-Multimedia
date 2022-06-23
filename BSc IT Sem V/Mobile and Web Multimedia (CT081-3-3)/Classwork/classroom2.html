@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Positioning</title>
+    <style type="text/css">
+        .card{
+            position: relative;
+            border: 1px solid hotpink;
+            height: 300px;
+            margin: 100px;
+        }
+        .circle1{
+            position: absolute;
+            border: 1px solid hotpink;
+            background-color: white;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            top: -40px;
+            left: -40px;
+        }
+        .circle2{
+            position: absolute;
+            top: 80px;
+            left: -25px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid hotpink;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .circle3{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: -25px;
+            left: 80px;
+            border: 1px solid hotpink;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+</body>
+</html>

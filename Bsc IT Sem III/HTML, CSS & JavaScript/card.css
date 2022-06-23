@@ -1,0 +1,116 @@
+body{
+    background: gainsboro;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 100px auto;
+    border: 2px solid rgb(184, 178, 178);
+    box-shadow: 2px 3px 22px grey;
+    display: flex;
+}
+.container1{
+    position: relative;
+    width:33%;
+    height: 450px;
+    background-image: url(nike.jpg);
+    background-position: center;
+    background-size: contain;
+    margin: 30px;
+    box-shadow: 5px 5px 15px;
+}
+.container .container1::before{    /*to design skew border*/
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: rgb(22, 201, 22);
+    z-index: -1;
+    transform: skew(3deg,2deg);
+}
+.container2{
+    position:relative;
+    width: 33%;
+    height: 450px;
+    margin: 30px;
+    background-image: url(adidas.jpg);
+    background-position: center;
+    background-size: auto;
+    border: 2px outset gainsboro;
+    box-shadow: 5px 5px 15px;
+}
+.container3{
+    position:relative;
+    width: 33%;
+    height: 450px;
+    margin: 30px;
+    background-image: url(puuma.jpg);
+    background-position: center;
+    background-size: contain;
+    border: 2px outset gainsboro;
+    box-shadow: 5px 5px 15px;
+}
+.container .container3::before{    /*to design skew border*/
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: rgb(22, 201, 22);
+    z-index: -1;
+    transform: skew(3deg,2deg);
+}
+.info-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(50px);
+    background: linear-gradient(to top, rgba(117, 108, 108, 0.9),rgba(0,0,0,1));
+    opacity: 0;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 17px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px;
+    transform: translateY(-40px);
+    visibility: hidden;
+}
+.container1:hover .info-card{
+    opacity: 1;
+    transition: 1.7s;
+    transform: translateY(0px);
+    visibility: visible;
+    box-shadow: 5px 5px 15px;
+}
+.container2:hover .info-card{
+    opacity: 1;
+    transition: 1.7s;
+    transform: translateY(0px);
+    visibility: visible;
+    box-shadow: 5px 5px 15px;
+}
+.container3:hover .info-card{
+    opacity: 1;
+    transition: 1.7s;
+    transform: translateY(0px);
+    visibility: visible;
+    box-shadow: 5px 5px 15px;
+}
+.inputa{
+    background-color: gainsboro;
+    border: 1px solid grey;
+    color: rgb(61, 58, 58);
+    padding: 10px 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 2px 3px 22px black;
+}

@@ -1,0 +1,36 @@
+<!--6th June, 2022-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Length</title>
+</head>
+<body>
+    <h3>Javascript Form Validation</h3>
+    <form name="form1" action="#">
+        <label for="">Enter a six letter String</label> <input type="text" name="text1">
+        <li class="submit"it"><input type="submit" name="submit" value="Submit" onclick="stringlength(document.form1.text1,6)"/></li>
+    </form>
+    <script>
+        function stringlength(inputtxt, minlength)
+        { 
+            var field = inputtxt.value; 
+            var minlen = minlength;
+
+            if(field.length != minlen)
+            { 
+                document.write("Please input the userid of " +minlen+ " characters");
+                return false;
+            }
+            else
+            { 
+                document.write('Your userid have accepted.');
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

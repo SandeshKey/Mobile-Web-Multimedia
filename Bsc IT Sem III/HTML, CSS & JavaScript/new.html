@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            New Web
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black Ops One">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata">
+        <style>
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(111, 78, 55, 0.1);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  font-family: Alata;
+  color: rgb(167, 247, 75);
+  border: 1px solid grey;
+  border-radius: 2px 2px;
+  margin-left: 30px;
+  border-bottom: 1px outset greenyellow;
+  text-align: center;
+  padding:14px 24px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #777777;
+  color: navajowhite;
+  transition: 1.1s;
+}
+
+.active {
+  background-color:rgb(156, 155, 154);
+  color: navajowhite;
+}
+li b{
+    display:inline-block;
+    color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid burlywood;
+    margin: 10px;
+    margin-top: 10px;
+    padding-right: 100px;
+    align-items: center;
+    border-radius: 2px 2px;
+    border-bottom: 01px inset honeydew;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+li b:hover:not(.active) {
+  background-color: black;
+  color: navajowhite;
+}
+
+
+            .background{
+                background-image:url(sky.jpg);
+                background-position:bottom;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family:Black Ops One;
+                text-align: left;
+                height: 100vh;
+                width: 100%;
+            }
+            .blur{
+                background-color: rgba(50, 50, 50, 0.7);
+                backdrop-filter: blur(18px);
+                height: 100vh;
+                width: 100%;
+            }
+            div{
+                border: 0px solid beige;
+                border-radius: 1px 1px 10px 1px;
+                border-right: solid gray; padding: 30px;
+                border-bottom: 0px solid lightgray;
+                box-shadow: 0px 8px 80px grey dashed;
+                padding: 5px;
+            }
+            .clearfix{
+                overflow: auto;
+            }
+            .img{
+                float: right;
+                padding: 0px 35px;
+                margin-top: 15px;
+            }
+            h1{
+                color: silver;
+                padding: 14px;
+                font-size: 60px;
+                text-align: center;
+                padding-left: 90px;
+            }
+            h2{
+                color: silver;
+                padding: 14px;
+                font-size: 40px;
+                text-align: center;
+                padding-left: 90px; 
+            }
+        </style>
+    </head>
+    <body>
+    <div class="background">
+        <div class="blur">
+            <div class="clearfix">
+                <img class="img" src="hotellogo.jpg" width="170" height="170" style="border-radius: 60px 60px;">
+            <h1 style="text-align: left;"> <b>HOTEL MOUNTAIN HERITAGE </b></h1>
+            </div>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#booking">Reservations</a></li>
+                <li><a href="#history">Our History</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li style="float: right; color: ivory; padding-right: 30px; margin-top: 10px;">Lakeside, 6, Pokhara <br> Contact : 061-462110</li>
+              </ul>
+              <h2 style="color:antiquewhite; text-align: center; margin-top: 30px;
+              font-family: Lobster; font-size: 30px;"><b><i>"Hospitality is Love in Action"</i></b></h2>
+              <div>
+                <ul>
+                    <h2>Make Your Stay Memorable</h2>
+                    <li style="float: right; padding-right: 535px;"><b href="#learn">Learn More</b></li>
+                    <li style="float: right;"><b href="#signin"> Sign In </b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
