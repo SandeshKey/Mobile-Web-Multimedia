@@ -1,2 +1,0 @@
-Name,13,	Male,20000,12222,	la,Pro
-SAM,20,Male,200000,929922,Lakeside,Programmer

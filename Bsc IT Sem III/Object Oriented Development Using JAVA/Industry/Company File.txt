@@ -1,2 +1,0 @@
-Sandesh, 	10,	 Male,	 20000,	 99999 ,		Lakeside,	 Programmer	
-Messi, 	19,	 Male,	 22202,	 99999 ,		Cat,	 Man	
