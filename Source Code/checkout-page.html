@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking CSS File  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!--Importing Google Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+    </style>
+
+    <!--Importing Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/11c8559464.js" crossorigin="anonymous"></script>
+
+    <title>Product Details</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/website-logo.png">
+
+</head>
+
+<body>
+    <div class="product-page">
+        <!--Header Section Starts Here-->
+        <header id="header-id" class="header-class fixed-top">
+            <div class="container-fluid d-flex align-items-center py-3">
+                <img class="logo-image" src="../assets/images/website-logo.png" alt="Website Logo">
+                <h1 class="logo mr-auto">
+                    <a href="./index.html">Mingo</a>
+                </h1>
+
+                <input type="checkbox" id="nav-check">
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span>
+                            <i class="fa-solid fa-bars py-3"></i>
+                        </span>
+                    </label>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li class=""><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li class="active"><a href="./catrgories.html">Categories</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#footer">About Us</a></li>
+
+                        <li class="nav-menu-icons text-center d-md-none">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-solid fa-square-phone"></i>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                    <i class="fa fa-bag-shopping"></i>
+                    <i class="far fa-user"></i>
+                </div>
+            </div>
+        </header>
+        <!--Header section Ends Here-->
+
+        <!-- page header starts -->
+        <div class="page-header-section page-header-bg m-0 p-0 py-lg-5">
+            <div class="container-fluid">
+                <div class="row page-header-row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <div class="page-header-text m-0 p-5">
+                            <p>WELCOME,</p>
+                            <h1>BRANDS & CATEGORIES</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page header ends -->
+
+        <!-- product brands categories starts -->
+
+
+        <div class="container checkout-container">
+            <div class="row checkout-row">
+                <div class="col checkout-col text-center">
+                    <h5>DELIVERY ADDRESS</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.06601630326!2d83.95944771513703!3d28.20530681003854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995951b4c297003%3A0x154f5b2110323833!2sLakeside%20Rd%2C%20Pokhara%2033700!5e0!3m2!1sen!2snp!4v1657452668866!5m2!1sen!2snp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <form>
+                        <div class="location-form mb-3 w-100">
+                            <label for="location" class="form-label text-center">OR</label>
+                            <input type="text" class="form-control" id="location" aria-describedby=""
+                                placeholder="Enter Location Manually">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container payment-container">
+            <div class="row" payment-row>
+                <div class="col payment-col">
+                    <h5 class="text-center">Payment Method</h5>
+                </div>
+            </div>
+
+            <div class="col payment-col2 d-inline-flex">
+                <div class="form-check mx-auto">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label text-light" for="flexRadioDefault1">
+                        <h5>Cash on delivery
+                        </h5>
+                        <img src="../assets/images/undraw_delivery_address_re_cjca.svg" alt="" style="height: 150px; width:150px">
+                    </label>
+                </div>
+                <div class="form-check mx-auto">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label text-light" for="flexRadioDefault2">
+                        <h5>Pay via Khalti</h5>
+                        <a href="#">
+                            <img src="../assets/images/khalti.png" alt="" style="height: 150px; width:300px">
+                        </a>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col payment-btn pb-5">
+            <a href="./index.html" class="boxed-btn black">CONFIRM</a>
+        </div>
+
+
+
+
+
+
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Linking jQuery  -->
+<script src="./main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="../assets/jQuery/jquery-3.6.0.js">
+<link rel="stylesheet" href="../assets/jQuery/jquery-3.6.0.min.js">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</html>

@@ -1,2 +1,0 @@
-JavaScript : a scripting or programming language that allows us to implement complex features on web pages.
-
