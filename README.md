@@ -203,4 +203,4 @@ Review browsing, account management, and administration to understand how the ap
 
 ### Project Documentation
 
-For PDF File, and Keynote/PowerPoint Presentation, Visit **[Sandesh Subedi](https://sandeshsubedi7.com.np/)**
+For PDF File, and Keynote/PowerPoint Presentation, Visit **[Sandesh Subedi](https://sandesh.design)**
