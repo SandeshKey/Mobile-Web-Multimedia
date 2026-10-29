@@ -204,3 +204,24 @@ Review browsing, account management, and administration to understand how the ap
 ### Project Documentation
 
 For PDF File, and Keynote/PowerPoint Presentation, Visit **[Sandesh Subedi](https://sandesh.design)**
+
+<br>
+<br>
+<br>
+<br>
+
+<p align="center">
+  <strong>Designed and developed by Sandesh Subedi.</strong>
+</p>
+
+<p align="center">
+  Product design grounded in human factors.
+</p>
+
+<p align="center">
+  <a href="https://www.sandesh.design/">Portfolio</a>
+  &nbsp; · &nbsp;
+  <a href="https://www.linkedin.com/in/sandeshxd/">LinkedIn</a>
+  &nbsp; · &nbsp;
+  <a href="mailto:subedi.38@wright.edu">Get in touch</a>
+</p>
